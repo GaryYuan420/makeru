@@ -1,0 +1,9 @@
+pushstack:main.o linkstack.o
+	cc main.o linkstack.o -o pushstack
+main.o:main.c
+	cc main.c -o main.o
+linkstack.o:linkstack.c
+	cc linkstack.c -o linkstack.o
+clean:
+	rm *.o pushstack
+	

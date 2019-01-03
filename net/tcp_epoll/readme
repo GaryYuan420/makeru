@@ -1,0 +1,2 @@
+client为epoll方式的IO复用客户端
+server为select方式的IO复用的服务器端，客户端连入后会打印出客户端的ip地址与端口，接收到客户端数据后打印输出，并返回给客户端“server recived“字符串

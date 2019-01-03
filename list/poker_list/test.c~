@@ -1,0 +1,27 @@
+#include "linklist.h"
+#define cardnum  13
+int main(int argc, const char *argv[])
+{
+	linklist H, p;
+	int i, count_num;
+
+	H=list_create();
+	for(i=0;i<cardnum-1;i++){
+		list_head_insert(H,0);
+	}
+	list_show(H);
+	p = H;
+	for(count_num=1;count_num<cardnum;count_num++){
+		for(i=0;i<2;i++){
+			p = p->next;
+			while(p->data != 0)
+				p = p->next;		
+		}
+		p->data = count_num;
+
+	}
+
+	list_show(H);
+
+	return 0;
+}

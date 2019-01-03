@@ -1,0 +1,3 @@
+首先运行server端，然后运行client端
+client中输入的字符通过tcp发送给server端，server收到数据后返回给client已收到数据
+使用循环IP 127.0.0.1，9991端口
