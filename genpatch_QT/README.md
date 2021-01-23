@@ -1,0 +1,1 @@
+Qt，使用svn的file list生成patch包
